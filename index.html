@@ -24,6 +24,18 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
+    <!-- Owl Carousel Assets -->
+    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="owl-carousel/owl.transitions.css" rel="stylesheet">
+
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- wwww -->
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -36,6 +48,40 @@
     <script src="components/home.js" type="text/javascript"></script>
 
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js" type="text/javascript"></script>
+<style>
+/*
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+.dropdown-content li{
+list-style-type: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+*/
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover
+{
+    color:#0e6b9f;
+}
+</style>
+<script type="text/javascript">
+    
+    
+</script>
+
+
 </head>
 
 <body id="page-top" class="index" ng-controller='HomeController as homeController'>
@@ -66,9 +112,20 @@
                             Success
                         </a>
                     </li>
-                    <li>
-                        <a class="portfolio-link" href="#aboutModal" data-toggle="modal">About</a>
-                    </li>
+                    
+
+                     <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+             <li><a class="portfolio-link" href="#aboutModal" data-toggle="modal">Our Journey</a></li>
+                        <li><a class="portfolio-link" href="#missionModal" data-toggle="modal">Our Mission</a></li>
+                        <li><a class="portfolio-link" href="#domainsModal" data-toggle="modal">Our Domains</a></li>
+            
+            
+          </ul>
+        </li>
+
+
                     <li>
                         <a href="#ourSolutionsModal" class="portfolio-link" data-toggle="modal">
                             Our Solutions
@@ -93,6 +150,13 @@
         <!-- /.container-fluid -->
     </nav>
 
+
+
+
+
+
+
+
     <!-- Header -->
     <header id="grad">
         <!-- <div class="container"> -->
@@ -111,8 +175,17 @@
     </section -->
 
 
+
+
+
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal modal fade" id="ourSolutionsModal" tabindex="-1" role="dialog" aria-hidden="true">
+
+
+
+
+
+
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -120,60 +193,30 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <h2 class="section-heading">E-Commerce</h2>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <div class="portfolio-caption">
-                            <h4>Analytics</h4>
-                            <p class="text-muted">Our analytics services start from Google Analytics and Google Tag Manager till Custom Solutions on top of opensource technologies</p>
-                        </div>
-                    </div>
-                    
-                   <div class="col-md-4 col-sm-6 portfolio-item">
-                        <div class="portfolio-caption">
-                            <h4>E-Commerce</h4>
-                            <p class="text-muted">We have over decade of experience in implementing small scale ecommerce solutions using Wordpress, medium scale using Magento and largest e-commerce portals using Oracle - ATG.</p>
 
-                            <p class="text-muted">Our e-commerce offering include open source frameworks like Broadleaf Commerce or fully custom build based on top of Spring Boot and micro-services</p>
-                        </div>
-                    </div>
 
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <div class="portfolio-caption">
-                            <h4>SAP</h4>
-                            <p class="text-muted">We understand large enterprise needs as well. With collective experience of over 20 years, we specialize across multiple layers of business operations and customer relations on top of SAP</p>
-                        </div>
-                    </div>
-                </div>
+<div id="demo">
+        
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+                <h2>Our Solutions</h2>
+              <div id="owl-demo" class="owl-carousel">
 
-                <div class="row">
-                    <h2 class="section-heading">Mobility</h2>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <div class="portfolio-caption">
-                            <h4>Android</h4>
-                            <p class="text-muted">As word looks so simple, well known and seems pretty simple and abondant resources around the globe, finding solution partner with vast knowledge of industry rather than technology is rare. We blend it</p>
-                        </div>
+                <div class="item"><img src="assets2/ecommerceP2.jpg" alt="The Last of us"></div>
+                <div class="item"><img src="assets2/mobilityOfferingsP1.jpg" alt="GTA V"></div>
+                <div class="item"><img src="assets2/NetworkManagementP1.jpg" alt="Mirror Edge"></div>
+                <div class="item"><img src="assets2/technologiesP.jpg" alt="Mirror Edge"></div>
 
-                        <div class="portfolio-caption">
-                            <h4>iOS</h4>
-                            <p class="text-muted">Mobile solutions without covering length and breadth is incomplete, we leave no stone un-turned here. Yes, we equally treat Android and iOS capabilities and make sure our customers get it what they want</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="row">
-                    <h2 class="section-heading">Network Management Systems</h2>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <div class="portfolio-caption">
-                            <h4>NMS</h4>
-                            <p class="text-muted">Everything you see electronically goes through wires, and we understand to its core. Be it Mobile or Web, Backend Jobs or Web Services... all have to go through Network. We understand it beyond application and build solutions to manage Network and Infrastructure either on-premise or cloud, we master both</p>
-                        </div>
-                    </div>
-                </div>
-
+              </div>
             </div>
+          </div>
+        </div>
+    </div>
+
+
+
+            
         </div>
     </div>
 
@@ -206,7 +249,7 @@
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                                
                             </div>
                         </div>
                         <img src="img/portfolio/about_img.jpg" style="height: 260px;" class="img-responsive" alt="">
@@ -220,7 +263,7 @@
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                                
                             </div>
                         </div>
                         <img src="img/portfolio/social-entrepreneurship.jpg" style="height: 260px;" class="img-responsive" alt="">
@@ -234,7 +277,7 @@
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                                
                             </div>
                         </div>
                         <img src="img/portfolio/ecommerce2.jpg" style="height: 260px;" class="img-responsive" alt="">
@@ -357,6 +400,169 @@
     </div>
 
     
+
+
+
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="missionModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                     <!-- Contact Section -->
+    <!-- Portfolio Grid Section -->
+    
+        <div class="container">
+           
+                <div class="row">
+                <!-- About Section -->
+    <!-- <section id="about" >  class="bg-light-gray" -->
+        <div class="container">
+            <div class="col-lg-12">
+                    
+                    
+                </div>
+            <div class="row col-lg-offset-2">
+                
+            
+                <div class="col-lg-2">
+                    <div class="row">
+                        <br><br>
+                                <p class="text-muted">To be the most trusted and recognized partner for its employees and customers.
+</p>
+                            </div>
+                            <div class="row">
+                                <p class="text-muted">  <br><br> <br><br> <br><br>   
+
+
+
+                                 <h6>Integrity :</h6> 
+ Responsibility, Honesty, Ethics, Dignity, Respect
+ <h6>
+Commitment, Success : </h6>
+Customer, Partner, Employees
+
+</p>
+                            </div>
+                        </div>
+                        
+                            <div class="col-lg-4 col-lg-offset-1">
+
+                                <h4 class="section-heading" >Our Mission</h4>
+                                <br><br>
+
+                                <img class="img-responsive centered" src="img/vision.png" alt="">
+                            </div>
+                        
+                    
+                            
+                         
+                         <div class="col-lg-2 col-lg-offset-1">
+                    <div class="row">
+                        <br><br>
+                                <p class="text-muted">To become one-stop-shop for Digital Transformation using the cutting edge technologies.
+
+</p>
+                            </div>
+                            <div class="row">
+                                <p class="text-muted">  <br><br> <br><br> <br><br>   
+
+
+
+                                <h6> Excellence :</h6> Standards, Quality.<br>
+<h6>Relationships :</h6> Reliability, Values, Trust.<br>
+<h6>Innovation :</h6> Focus, Expertise, Experience.
+
+</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+ <!--    </section> -->
+            </div>
+        </div>
+    
+
+                </div>
+
+                
+
+                
+
+            </div>
+        </div>
+
+
+<!--- hhhhhhhhhhh -->
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="domainsModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                     <!-- Contact Section -->
+    <!-- Portfolio Grid Section -->
+    
+        <div class="container">
+           
+                <div class="row">
+                <!-- About Section -->
+    <!-- <section id="about" >  class="bg-light-gray" -->
+        <div class="container">
+            <div class="col-lg-12">
+                    
+                    
+                </div>
+            <div class="row col-lg-offset-2">
+                
+            
+               
+                        
+                            <div class="col-lg-11">
+
+                                 <h4 class="section-heading text-centered" >Our Domains</h4>
+                                <br><br>
+
+                                <img class="img-responsive col-lg-12" src="img/domains.png" alt="">
+                            </div>
+                        
+                    
+                            
+                         
+                         
+                </div>
+            </div>
+        </div>
+ <!--    </section> -->
+            </div>
+        </div>
+    
+
+                </div>
+
+                
+
+                
+
+            </div>
+        </div>
+<!--- hhhhhhh -->
+
+
+
+    </div>
 
     <!-- Team Section -->
    
@@ -852,6 +1058,57 @@
     '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NGL4M4');</script>
     <!-- End Google Tag Manager -->
+
+
+<!-----  OWL  -->
+
+
+    <script src="assets/js/jquery-1.9.1.min.js"></script> 
+    <script src="owl-carousel/owl.carousel.js"></script>
+
+
+    <!-- Demo -->
+
+    <style>
+    #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    </style>
+
+
+    <script>
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+
+      navigation : true,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem : true,
+      autoPlay: 2000
+
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+
+      });
+    });
+    </script>
+
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/application.js"></script>
+
+
+<!-- OWL -->
+
 
 </body>
 

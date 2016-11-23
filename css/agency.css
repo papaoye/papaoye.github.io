@@ -215,10 +215,11 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-weight: 900;
     letter-spacing: 1px;
     color: #0e6b9f;
-    font-size: 18px;
+    font-size: 12px;
+
 }
 
 .navbar-default .nav li a:hover,
@@ -878,4 +879,9 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #1199dd;
+}
+
+
+.dropdown-content li a{
+font-size: 12px;
 }
