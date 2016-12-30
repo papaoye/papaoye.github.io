@@ -53,9 +53,23 @@ liDecoNone, li {
 	
 	 border-radius: 10px;
 	font-family: 'Raleway',sans-serif; font-size: 16px; font-weight: 500; line-height: 24px; margin: 0 0 24px;
-}
+} 
+.missionDiv{
+	padding: 50px;
+    padding-bottom: 10px;
+    color:darkred;
+    background: rgba(50, 60, 0.8);
+    background-color:white;
+    opacity: 0.6;
+    z-index: -1;
+    border-radius: 10px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0 0 24px;}
 .backgroundOPac{
-	background-color: beige;
+	/*background-color: beige;/*
 	/*opacity: 0.9;*/
     filter: alpha(opacity=10); /* For IE8 and earlier */
 	/*padding: 5px;*/
@@ -110,10 +124,16 @@ p {
   margin-bottom: 20px;
 }
 
-h1, h2, h3, h4, h5, h6, figure {
+h1, h3, h2, h5, h6, figure {
   color: #000;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
+  margin: 0 0 20px 0;
+}
+h4 {
+  color: #000;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 200;
   margin: 0 0 20px 0;
 }
 
@@ -224,7 +244,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 .gtco-nav ul li.has-dropdown .dropdown {
-  width: 130px;
+  width: 160px;
   -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
@@ -811,6 +831,17 @@ form label {
   padding: 7em 0;
   clear: both;
   position: relative;
+	
+}
+#gtco-features{
+	
+	
+	background: url(./../images/mission_vision.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	
 }
 @media screen and (max-width: 768px) {
   #gtco-features,
@@ -915,8 +946,16 @@ form label {
 .gtco-heading.gtco-heading-sm {
   margin-bottom: 2em;
 }
-.gtco-heading h2 {
+.gtco-heading h2 , h4 {
   font-size: 36px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-weight: 300;
+  color:darkblue;
+  position: relative;
+}
+.gtco-heading  h4 {
+  font-size: 22px;
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: 300;
